@@ -81,7 +81,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/paulffm/QuantFinance/blob/main/.idea/images/pythoncodepic.png)
 
 This project is to get a better understanding in the world of quantitative finance and to prepare myself for my internship.
 
@@ -236,7 +236,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 -->
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://github.com/paulffm/QuantFinance/blob/main/.idea/images/pythoncodepic.png
 [Python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://nextjs.org/](https://www.python.org
 
