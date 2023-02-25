@@ -144,8 +144,14 @@ Key idea: Price at which a willing buyer and seller transact an options contract
 * Premium = Intrinsic Value + Time Value
   * Intrinsic Value = Value that the contact has right now = Current Price - Strike Price = S - K Put: K - S
   * Time Value = Future Value that the contract could potentially have = Price Uncertainty = more uncertain -> higher
-### Difference European and American Option
-####
+### Difference European and American Option:
+#### Option Settlement:
+* Call (Put): Exercised Buyer: choose to buy (sell) @ Strike Price; Assigned Seller: assigned to sell (buy) @ Strike Price
+* European Contract: Can only be exercised at Expiration 
+* American Contract: Can be exercised anytime between now and expiration date
+## Black Scholes PDE:
+### Assumptions:
+
 
 
 ### Prerequisites
