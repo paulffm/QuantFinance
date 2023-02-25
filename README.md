@@ -111,6 +111,12 @@ An option is a contract which gives the buyer the right but not the obligation t
 * In short:
   * Agreement to buy/sell at given price, to specified time
   * a premium is paid for the flexibility
+#### Why using Options:
+* Hedge risk
+* speculation
+#### Configurations of Options Contract Terms:
+* Premium: 
+
 
 ### Prerequisites
 
