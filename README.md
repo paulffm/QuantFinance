@@ -106,6 +106,12 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 First of all I would like to introduce and explain basic concepts of quantitative finance.
 
+### Options
+An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a speciifed date.
+* In short:
+** Agreement to buy/sell at given price, to specified time
+** a premium is paid for the flexibility
+
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
