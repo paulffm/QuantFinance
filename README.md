@@ -33,7 +33,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/paulffm/QuantFinance">
-    <img src="https://github.com/paulffm/QuantFinance/blob/main/.idea/images/QuantFinancepic.jpg" alt="Logo" width="500" height="300">
+    <img src="https://github.com/paulffm/QuantFinance/blob/main/.idea/images/QuantFinancepic.jpg" alt="Logo" width="800" height="500">
   </a>
 
   <h3 align="center">Quant Finance</h3>
@@ -81,7 +81,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="https://github.com/paulffm/QuantFinance/blob/main/.idea/images/pythoncodepic.png" width="100" height="100" />
+<img src="https://github.com/paulffm/QuantFinance/blob/main/.idea/images/pythoncodepic.png" width="300" height="300" />
 
 This project is to get a better understanding in the world of quantitative finance and to prepare myself for my internship.
 
