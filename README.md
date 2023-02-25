@@ -97,7 +97,8 @@ This project is to get a better understanding in the world of quantitative finan
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Python][Python]]Python-url]
+* [![Python][Python-shield]][Python-url]
+* [![Contributors][contributors-shield]][contributors-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -238,6 +239,6 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
-[Python]: [https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=nextdotjs&logoColor=white](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+[Python-shield]: [https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=nextdotjs&logoColor=white](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 [Python-url]: https://nextjs.org/](https://www.python.org
 
