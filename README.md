@@ -81,7 +81,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/paulffm/QuantFinance/blob/main/.idea/images/pythoncodepic.png =100x100)
+<img src="https://github.com/paulffm/QuantFinance/blob/main/.idea/images/pythoncodepic.png" width="100" height="100" />
 
 This project is to get a better understanding in the world of quantitative finance and to prepare myself for my internship.
 
