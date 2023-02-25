@@ -36,10 +36,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Quant Finance</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Project to deepen your understanding of quantitative finance
     <br />
     <a href="https://github.com/paulffm/QuantFinance/tree/main"><strong>Explore the docs »</strong></a>
     <br />
