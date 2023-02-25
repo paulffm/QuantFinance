@@ -116,9 +116,9 @@ An option is a contract which gives the buyer the right but not the obligation t
 * speculation
 ### Options Contract Terms:
 * Premium: Must be paid to buy Options Contract
-* Expiration Date
-* Strike Price: How much the "insurance" holder receive if a certain event occurs
-* Underlying: Asset behind it 
+* Expiration Date: Date on which the owner of the option must decide to buy (call) or sell (put)
+* Strike Price: is the price at which the underlying will be delivered if exercised by the owner
+* Underlying: The underlying asset
 * Contract Type: Call or Put: Put Option: Sell the Call: Buy underlying at a given Strike price
 ### Call vs Put:
 The right to buy (Call)/ sell (Put) the underlying at a specified price at a specified time in the future
