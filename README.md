@@ -109,8 +109,8 @@ First of all I would like to introduce and explain basic concepts of quantitativ
 ### Options
 An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a speciifed date.
 * In short:
- * Agreement to buy/sell at given price, to specified time
- * a premium is paid for the flexibility
+  * Agreement to buy/sell at given price, to specified time
+  * a premium is paid for the flexibility
 
 ### Prerequisites
 
