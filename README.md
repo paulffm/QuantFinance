@@ -106,7 +106,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 First of all I would like to introduce and explain basic concepts of quantitative finance.
 
-### Options
+## Options
 An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a speciifed date.
 * In short:
   * Agreement to buy/sell at given price, to specified time
@@ -114,8 +114,17 @@ An option is a contract which gives the buyer the right but not the obligation t
 #### Why using Options:
 * Hedge risk
 * speculation
-#### Configurations of Options Contract Terms:
-* Premium: 
+#### Options Contract Terms:
+* Premium: Must be paid to buy Options Contract
+* Expiration Date
+* Strike Price: How much the "insurance" holder receive if a certain event occurs
+* Underlying: Asset behind it 
+* Contract Type: Call or Put: Put Option: Sell the Call: Buy underlying at a given Strike price
+#### Call vs Put:
+* The right to buy (Call)/ sell (Put) the underlying at a specified price at a specified time in the future
+  * Example: underlying price at t (now) p_t = 40 $
+  * Right to buy/sell the underlying at 40 $ in 1 year
+  
 
 
 ### Prerequisites
