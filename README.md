@@ -33,7 +33,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/paulffm/QuantFinance">
-    <img src="https://github.com/paulffm/QuantFinance/blob/main/.idea/QuantFinancepic.jpg" alt="Logo" width="80" height="80">
+    <img src="https://github.com/paulffm/QuantFinance/blob/main/.idea/QuantFinancepic.jpg" alt="Logo" width="240" height="240">
   </a>
 
   <h3 align="center">Quant Finance</h3>
