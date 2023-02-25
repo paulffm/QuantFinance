@@ -121,10 +121,11 @@ An option is a contract which gives the buyer the right but not the obligation t
 * Underlying: Asset behind it 
 * Contract Type: Call or Put: Put Option: Sell the Call: Buy underlying at a given Strike price
 #### Call vs Put:
-* The right to buy (Call)/ sell (Put) the underlying at a specified price at a specified time in the future
+* 
   * Example: underlying price at t (now) p_t = 40 $
-  * Right to buy/sell the underlying at 40 $ in 1 year
-  
+  * Right to buy/sell the underlying at p_t+365 = 40 $ in 1 year
+##### Call:
+* Call buy: 
 
 
 ### Prerequisites
