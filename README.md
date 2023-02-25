@@ -132,7 +132,13 @@ The right to buy (Call)/ sell (Put) the underlying at a specified price at a spe
 *  Put Sell: Seller must pay the difference between K - S: Hoping S rises over time
 ### Underlying:
 An underlying is a security/commodity to be bought or sold under the terms of the contract
-* Shares, Futures
+* Shares, Futures, Anything
+### Contract Multiplier:
+Purchasing options have a specific quantity of underlying per contract
+* Usually: Shares: 100 Shares / options contract
+* Why? Example:
+  * Underlying share: 10$/Share; 1% Move -> 0.1$ Change
+  * Underlying is Option: 7000 Points currently and 25$/point; 1% Move -> 7000 Points * 1% * 25$/Points = 1750$
 
 
 ### Prerequisites
