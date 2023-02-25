@@ -236,7 +236,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 -->
-[product-screenshot]: https://github.com/paulffm/QuantFinance/blob/main/.idea/images/pythoncodepic.png
+[product-screenshot]: (https://github.com/paulffm/QuantFinance/blob/main/.idea/images/pythoncodepic.png =50x50)
 [Python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://nextjs.org/](https://www.python.org
 
