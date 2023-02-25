@@ -111,24 +111,28 @@ An option is a contract which gives the buyer the right but not the obligation t
 * In short:
   * Agreement to buy/sell at given price, to specified time
   * a premium is paid for the flexibility
-#### Why using Options:
+### Why using Options:
 * Hedge risk
 * speculation
-#### Options Contract Terms:
+### Options Contract Terms:
 * Premium: Must be paid to buy Options Contract
 * Expiration Date
 * Strike Price: How much the "insurance" holder receive if a certain event occurs
 * Underlying: Asset behind it 
 * Contract Type: Call or Put: Put Option: Sell the Call: Buy underlying at a given Strike price
-#### Call vs Put:
-* The right to buy (Call)/ sell (Put) the underlying at a specified price at a specified time in the future
-  * Example: underlying price at t (now) p_t = 40 $
-  * Right to buy/sell the underlying at p_t+365 = 40 $ in 1 year
+### Call vs Put:
+The right to buy (Call)/ sell (Put) the underlying at a specified price at a specified time in the future
+* Example: underlying price at t (now) p_t = 40 $
+* Right to buy/sell the underlying at p_t+365 = 40 $ in 1 year
 ##### Call: (Stock Price S, Strike Price K)
 * Call buy: The right to buy the underlying at a specified price K at a specified time in the future: Hoping Strike Price K is below the real future stock price S
 * Call sell: Seller must pay the difference between S - K: Hoping S falls over time
+##### Put:
 * Put buy: The right to sell the underlying at a specified price K at a specified time in the future: Hoping Strike Price K is above the real future stock price S
 *  Put Sell: Seller must pay the difference between K - S: Hoping S rises over time
+### Underlying:
+An underlying is a security/commodity to be bought or sold under the terms of the contract
+* Shares, Futures
 
 
 ### Prerequisites
