@@ -139,6 +139,13 @@ Purchasing options have a specific quantity of underlying per contract
 * Why? Example:
   * Underlying share: 10$/Share; 1% Move -> 0.1$ Change
   * Underlying is Option: 7000 Points currently and 25$/point; 1% Move -> 7000 Points * 1% * 25$/Points = 1750$
+### Option Premium: Call/Put Price 
+Key idea: Price at which a willing buyer and seller transact an options contract: 
+* Premium = Intrinsic Value + Time Value
+  * Intrinsic Value = Value that the contact has right now = Current Price - Strike Price = S - K Put: K - S
+  * Time Value = Future Value that the contract could potentially have = Price Uncertainty = more uncertain -> higher
+### Difference European and American Option
+####
 
 
 ### Prerequisites
