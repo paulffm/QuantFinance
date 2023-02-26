@@ -1,8 +1,18 @@
 import numpy as np
 from scipy.stats import norm
 N = norm.cdf
+
+
 class BlackScholes:
     def __init__(self, S, K, T, r, sigma, q=0):
+        '''
+        :param S:
+        :param K:
+        :param T:
+        :param r:
+        :param sigma:
+        :param q:
+        '''
         self.S = S
         self.K = K
         self.T = T
