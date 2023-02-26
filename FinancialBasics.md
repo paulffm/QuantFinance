@@ -83,6 +83,7 @@ This project is to get a better understanding in the world of quantitative finan
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
+* [![LaTeX][Latex-shield]][Latex-url] 
 * [![Python][Python-shield]][Python-url]
 
 
@@ -165,4 +166,6 @@ Key idea: Price at which a willing buyer and seller transact an options contract
 [product-screenshot]: (https://example.com)
 [Python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://nextjs.org/](https://www.python.org
+[Latex-shield] https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
+[Latex-url] https://www.overleaf.com
 
