@@ -122,7 +122,7 @@ An option is a contract which gives the buyer the right but not the obligation t
 * Contract Type: Call or Put: Put Option: Sell the Call: Buy underlying at a given Strike price
 ### Call vs Put:
 The right to buy (Call)/ sell (Put) the underlying at a specified price at a specified time in the future
-* Example: underlying price at t (now) p_t = 40 $
+* Example: underlying price at t (now) $p_t = 40 $$
 * Right to buy/sell the underlying at p_t+365 = 40 $ in 1 year
 ##### Call: (Stock Price S, Strike Price K)
 * Call buy: The right to buy the underlying at a specified price K at a specified time in the future: Hoping Strike Price K is below the real future stock price S
@@ -161,9 +161,10 @@ Key idea: Price at which a willing buyer and seller transact an options contract
 2. Construct Risk Free Portfolio
 3. C_t = C(s, t) with Itos Rule 
 ##### Construct Portfoio:
-* 1 Option, $-alpha_t$ shares: $V_t = C_t - alpha_t S_t$
+* 1 Option, $-alpha_t$ shares: $V_t = C_t - \alpha_t S_t$
 * Assume underlying follow Geometric Brownian Motion: $dS_t = \mu S_t + G S_t dW_t$ (Drift + Diffusion) 
-* $\delta C_t = \frac{\partial C_t}{\partial t} dt + \frac{\partial C_t}{\partial S} dS + \frac{T}{2} (\frac{\partial^2 C_t}{\partial t^2} dS^2 + (\frac{\partial^2 C}{\partial S^2} dS^2 + (\frac{\partial^2 C}{\partial t^2} dt^2$
+* $\delta C_t = \frac{\partial C_t}{\partial t} dt + \frac{\partial C_t}{\partial S} dS + \frac{T}{2} + (\frac{\partial^2 C}{\partial S^2} dS^2 + (\frac{\partial^2 C}{\partial t^2}) dt^2$
+* $dV_t = frac{\partial C_t}{\partial t} dt + \frac{\partial C_t}{\partial S} dS + \frac{1}{2} + \frac{\partial^2 C}{\partial S^2} - \alpha dS_t$ 
 
 
 ### Prerequisites
