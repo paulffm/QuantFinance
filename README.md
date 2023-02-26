@@ -151,7 +151,19 @@ Key idea: Price at which a willing buyer and seller transact an options contract
 * American Contract: Can be exercised anytime between now and expiration date
 ## Black Scholes PDE:
 ### Assumptions:
-
+* Short Term interest rates are constant: risk free zinssatz gleich für Kapialaufnahme und Kapitalanlaghe
+* stocks pay no dividens
+* No transactions costs
+* can borrow fractions
+* Short selling allowed
+### Method Overview
+1. Price Derivative using Replication
+2. Construct Risk Free Portfolio
+3. C_t = C(s, t) with Itos Rule 
+##### Construct Portfoio:
+* 1 Option, $-alpha_t$ shares: $V_t = C_t - alpha_t S_t$
+* Assume underlying follow Geometric Brownian Motion: $dS_t = \mu S_t + G S_t dW_t$ (Drift + Diffusion) 
+* $\delta C_t = partial der (C_t / t) dt + partial$
 
 
 ### Prerequisites
