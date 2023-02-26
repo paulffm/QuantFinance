@@ -163,7 +163,7 @@ Key idea: Price at which a willing buyer and seller transact an options contract
 ##### Construct Portfoio:
 * 1 Option, $-alpha_t$ shares: $V_t = C_t - alpha_t S_t$
 * Assume underlying follow Geometric Brownian Motion: $dS_t = \mu S_t + G S_t dW_t$ (Drift + Diffusion) 
-* $\delta C_t = partial der (C_t / t) dt + partial$
+* $\delta C_t = \frac{\partial C_t}{\partial t} dt + \frac{\partial C_t}{\partial S} dS + \frac{T}{2} (\frac{\partial^2 C_t}{\partial t^2} dS^2 + (\frac{\partial^2 C}{\partial S^2} dS^2 + (\frac{\partial^2 C}{\partial t^2} dt^2
 
 
 ### Prerequisites
