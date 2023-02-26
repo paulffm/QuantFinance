@@ -93,10 +93,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 # Financial Basics
-
-First of all I would like to introduce and explain basic concepts of quantitative finance.
-
-## Options
+# Options
 An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a speciifed date.
 * In short:
   * Agreement to buy/sell at given price, to specified time
@@ -156,7 +153,17 @@ Key idea: Price at which a willing buyer and seller transact an options contract
 * $\delta C_t = \frac{\partial C_t}{\partial t} dt + \frac{\partial C_t}{\partial S} dS + \frac{T}{2} + (\frac{\partial^2 C}{\partial S^2} dS^2 + (\frac{\partial^2 C}{\partial t^2}) dt^2$
 * $dV_t = frac{\partial C_t}{\partial t} dt + \frac{\partial C_t}{\partial S} dS + \frac{1}{2} + \frac{\partial^2 C}{\partial S^2} - \alpha dS_t$ 
 * Option only can be exercised at expiration
-* 
+
+# Porfolio Theory
+Consists of two key components
+* Risk: Variance
+* Reward: Expectation of reward
+This leads to an optimization problem: How do I weight different assets in my portfolio to maximize my reward while minimizing my risk
+## Risk
+* Unsystematic: risk that is inherent in a specific compay or industry
+* Systematic: risk that is inherent to the entire market or market segment
+### Important Parameters:
+* correlation, p-values
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
