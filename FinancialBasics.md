@@ -84,7 +84,7 @@ This project is to get a better understanding in the world of quantitative finan
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 * [![LaTeX][Latex-shield]][Latex-url] 
-* [![Python][Python-shield]][Python-url]
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
