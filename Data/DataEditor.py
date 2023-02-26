@@ -13,6 +13,7 @@ def getData(stocks, start, end, col='Close'):
     return stockdata
 
 def mean_std(stockdata):
+    # To Do: make sure that it is possible for multidim data?
     '''
     :param stockdata:
     :return:
