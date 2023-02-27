@@ -2,7 +2,7 @@ from Data.DataEditor import getData, mean_std
 import numpy as np
 
 
-class EfficientFrontier:
+class PortfolioManager:
 
     def pf_performance(self, stocks, weights):
         '''
