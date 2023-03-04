@@ -104,12 +104,25 @@ interest rate = percentage that is paid over a certain time period. Banks may ch
 Discret compounding: $M_0 * (1 + r)^n$
 Continous compounding: $M_0 * (1 + \frac{r}{m})^n$ \\
 PDE: $\frac{d M}{d t} = r M(t) => M(t) = M_0 \exp ^{rt}$
+# Definitions:
+* Volatility = Measure for variation of financial prices over time
+* Security = instrument representing ownership
+* Return = gain or loss of a security in a particular period
+* Commodities = raw products
+Options depending on strike, maturity, delta=how much option depends on underlying, implied volatility=sigma, uncertainty
+
+# Hedging
+A reduction of risk for example by combining a number of Shares S and Puts $V_p$ in a portfolio
+## Value of an Option example
+$\Pi (t) = V_{C, 0} - \Delta \cdot S_0$
+
+
 
 
 
 # Options
 Tiny piece of financial world, but important for modelling aspects.
-An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a speciifed date.
+An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a specified date.
 * In short:
   * Agreement to buy/sell at given price, to specified time
   * a premium is paid for the flexibility
@@ -125,13 +138,17 @@ An option is a contract which gives the buyer the right but not the obligation t
 ### Call vs Put:
 The right to buy (Call)/ sell (Put) the underlying at a specified price at a specified time in the future
 * Example: underlying price at t (now) $p_t = 40 $$
-* Right to buy/sell the underlying at p_t+365 = 40 $ in 1 year
+* Right to buy/sell the underlying at $p_t+365 = 40$  in 1 year
 ##### Call: (Stock Price S, Strike Price K)
 * Call buy: The right to buy the underlying at a specified price K at a specified time in the future: Hoping Strike Price K is below the real future stock price S
-* Call sell: Seller must pay the difference between S - K: Hoping S falls over time
+* Call sell: Seller must pay the difference between S - K: Hoping S falls over time \\
+Value of european call option at expiry T, Stock price S, Strike price K:
+$ V_C(T, S_T) = max(S_T - K, 0)$
 ##### Put:
 * Put buy: The right to sell the underlying at a specified price K at a specified time in the future: Hoping Strike Price K is above the real future stock price S
 *  Put Sell: Seller must pay the difference between K - S: Hoping S rises over time
+Value of european put option at expiry T, Stock price S, Strike price K:
+$ V_P(T, S_T) = max(K - S_T, 0)$
 ### Underlying:
 An underlying is a security/commodity to be bought or sold under the terms of the contract
 * Shares, Futures, Anything
@@ -151,6 +168,7 @@ Key idea: Price at which a willing buyer and seller transact an options contract
 * Call (Put): Exercised Buyer: choose to buy (sell) @ Strike Price; Assigned Seller: assigned to sell (buy) @ Strike Price
 * European Contract: Can only be exercised at Expiration 
 * American Contract: Can be exercised anytime between now and expiration date
+* Bermudan Contract: Can be only exercised on specified dates
 ## Black Scholes PDE:
 ### Assumptions:
 * Short Term interest rates are constant: risk free zinssatz gleich für Kapialaufnahme und Kapitalanlaghe
