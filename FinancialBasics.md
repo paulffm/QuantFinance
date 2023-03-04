@@ -121,7 +121,23 @@ $$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} -max(S_{up} - K, 0} = V_
 Stock goes up: Buyer of option dont buy
 $$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{d}  $$
 $$\Delta =  \frac{S_{up} - K}{S_{up} - S_{d}}$$
-You can see here that the volatility $S_{up} - S_{d}$ drives the prices of the option. More volatility smaller $\Delta$
+You can see here that the volatility $S_{up} - S_{d}$ drives the prices of the option. More volatility smaller $\Delta$ and higher price for the option \\
+General principles:\\
+* The longer the time to expiry, the more time time there is for the asset to rise or fall\\
+* the more the asset is volatile the higher 
+## Put-Call Parity
+A relation between euro call and put options with same strike price K and expiry T:\\
+Portfolio A: Call option + $K \cdot e^-{rT}$ (discounted)\\
+Portfolio B: Put option + one unit of asset
+$$\Pi_A (t) = max(S_T - K, 0) + K = max(S_T, K)$$
+$$\Pi_B (t) = max(K - S_T, 0) + S_T = max(K, S_T)$$
+so: \\
+$$V_C + K \cdot e^-{r(T - t)} = V_p + S(t)$$
+## Arbitrage
+If difference between call-put Parity big enough
+
+
+
 
 
 
