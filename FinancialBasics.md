@@ -94,13 +94,17 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 # Financial Basics
 # Stocks
-Ownershop of a small piece of a company. Price is determined by the value of the company and by the expectations = bid and ask behavior. 
+Ownershop of a small piece of a company. Price is determined by the value of the company and by the expectations = bid and ask behavior. \\
 Volatility = stock price difference to expected value
 value in holding the stock comes from dividends and any growth in the stocks value
 Dividends: Cum = Buying af
 # Interest rate
 interest = money paid for a credit or liability = percentage of principal, amount owed to the lender \\
-interest rate = 
+interest rate = percentage that is paid over a certain time period. Banks may change the interest rate to either slow down or speed up economy growth \\
+Discret compounding: $M_0 * (1 + r)^n$
+Continous compounding: $M_0 * (1 + \frac{r}{m})^n$ \\
+PDE: $\frac{d M}{d t} = r M(t) => M(t) = M_0 \exp ^{rt}$
+
 
 
 # Options
