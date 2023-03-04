@@ -137,7 +137,17 @@ $$V_C + K \cdot e^-{r(T - t)} = V_p + S(t)$$
 If difference between call-put Parity big enough
 # Modeling Asset prices
 SDE = stochastic differential equation
-interested in return: $return = $\frac{S(t + \Delta - S(t)}{S(t)}$
+interested in return: $return = \frac{S(t + \Delta - S(t)}{S(t)}$
+## Wiener Process
+* starts at $W_0 = 0$
+* stationary, independent increments (uncorrelated increments like Markov)
+* for every t > 0, W(t) has a normal distribution with mean=0 and variance t
+* it has continous paths with no jumps
+$dW(t) = W(t+\deltat) - W(t)$ ,var: $dW(t)= \sqrt{dt} \cdot Z$ with Z standardnv
+## Stochastic Processes
+A collection of RV $X(t)(\omega)$ $t = time$ and $\omega$ outcome from probabilistic space. (many trajectories: each for a $\omega$
+## Geometric Brownian Motion: GBM
+Drift + . Drift is expectation of dS(t)
 
 
 
