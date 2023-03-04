@@ -172,10 +172,27 @@ Z - mean / std because of better convergence
 	\item[] t = time to option maturity (in years)
 	\item[] N = normal cumulative distribution function
 \end{itemize}
+$$\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2} \frac{\partial^{2} \mathrm C}{\partial \mathrm C^2}
+	+ \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
+	\mathrm r \mathrm C$$
+Assumption of stochastic process and bank account $M(t)= M_0 \cdot e^{rt}$
+Have one option of euro type and a shares S: We buy or sell options and in order to hedge we trade underlying stock: Dont want to lose or gain in the market -> have to continously rebalance portfolio $\Pi (t, S(t))$: \\
+$$\Pi (t, S(t)) = V(t, S(t) - \Delta \cdot S(t)$$ 
+Dynamics of portfolio: 
+$$d\Pi (t, S(t)) = dV(t, S(t) - \Delta \cdot dS(t)$$
+Then apply itos lemma to find SDE of dV:
+dS(t) ersetzt mit Standard Drift gleichung genauso dS(t)^2 mit dt^2=0
+Dont want uncertainty choose $\Delta(t)= $ -> cancel Brownian Motion: \\
+Value now fully deterministic, fully depend on underlying\\
+$d\Pi$ should grow with $r\Pi dt$: same yield as money bank account?
+
+
+
+
 # Stochastic
 ## Measure
-P - real world measure
-Q - risk neutral measure
+P - real world measure: No arbitrage
+Q - risk neutral measure: Arbitrage conditions need to hold
 
 
 
