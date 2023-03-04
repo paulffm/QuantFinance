@@ -143,11 +143,23 @@ interested in return: $return = \frac{S(t + \Delta - S(t)}{S(t)}$
 * stationary, independent increments (uncorrelated increments like Markov)
 * for every t > 0, W(t) has a normal distribution with mean=0 and variance t
 * it has continous paths with no jumps
-$dW(t) = W(t+\deltat) - W(t)$ ,var: $dW(t)= \sqrt{dt} \cdot Z$ with Z standardnv
+$dW(t) = W(t+\delta t) - W(t)$ ,var: $dW(t)= \sqrt{dt} \cdot Z$ with Z standardnv
 ## Stochastic Processes
 A collection of RV $X(t)(\omega)$ $t = time$ and $\omega$ outcome from probabilistic space. (many trajectories: each for a $\omega$
 ## Geometric Brownian Motion: GBM
-Drift + . Drift is expectation of dS(t)
+$dS(t) = \mu dS(t) + \sigma dS(t) dW(t)$
+Drift + Volatility. Drift is expectation of dS(t) and only over longer time scales it becomes important -> Volatility dominates \\
+Other types are: 
+* arithmetic BM: can be negative
+* GBM:
+* Ornstein Uhlenbeck: oscilating around mean with speed k
+## Itos Lemma
+Main ideas:\\
+given Process: Consider a function of this Process $Y(t) = g(t, X(t))$\\
+ito tells me the dynamics of process d: dY -> can solve many SDE by hand\\
+With itos table I can find the SDE of dY(t)\\
+
+
 
 
 
