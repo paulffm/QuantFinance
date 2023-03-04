@@ -99,7 +99,7 @@ Volatility = stock price difference to expected value
 value in holding the stock comes from dividends and any growth in the stocks value
 Dividends: Cum = Buying af
 # Interest rate
-interest = money paid for a credit or liability = percentage of principal, amount owed to the lender
+interest = money paid for a credit or liability = percentage of principal, amount owed to the lender \\
 interest rate = 
 
 
