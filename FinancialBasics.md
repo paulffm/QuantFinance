@@ -117,7 +117,7 @@ A reduction of risk for example by combining a number of Shares S and Puts $V_p$
 Writer sell option with value $V_{C, 0}$ and hedge this position with buying stock with value $S_0$: How to choose $\Delta$?
 $$\Pi (t) = V_{C, 0} - \Delta \cdot S_0$$ 
 Stock goes up: Buyer of option: buys 
-$$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} -max(S_{up} - K, 0} = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} - S_{up} + K $$ 
+$$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} -max(S_{up} - K, 0) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} - S_{up} + K $$ 
 Stock goes up: Buyer of option dont buy
 $$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{d}  $$
 $$\Delta =  \frac{S_{up} - K}{S_{up} - S_{d}}$$
@@ -135,6 +135,9 @@ so: \\
 $$V_C + K \cdot e^-{r(T - t)} = V_p + S(t)$$
 ## Arbitrage
 If difference between call-put Parity big enough
+# Modeling Asset prices
+SDE = stochastic differential equation
+interested in return: $return = $\frac{S(t + \Delta - S(t)}{S(t)}$
 
 
 
