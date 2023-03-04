@@ -157,7 +157,25 @@ Other types are:
 Main ideas:\\
 given Process: Consider a function of this Process $Y(t) = g(t, X(t))$\\
 ito tells me the dynamics of process d: dY -> can solve many SDE by hand\\
-With itos table I can find the SDE of dY(t)\\
+With itos table I can find the SDE of dY(t) and can solve it\\
+then by substituting mean and var in F(x) = P(X < x) of NV I can find the prob density function \\
+How to simulate:
+$dX(t) = \frac{X(t+ \delta t) - X(t)}{\delta t)}$ and then solve for $X(t+ \delta t)$ on time grid. Also write dW(t) in this manner: \\
+Z - mean / std because of better convergence 
+# Black Scholes Model
+\begin{itemize}
+	\item[] C = Call option price 
+	\item[] S = Current stock price
+	\item[] K = Strike price of the option
+	\item[] r = risk-free interest rate (a number between 0 and 1)
+	\item[] $\sigma$ = volatility of the stocks return (a number between 0 and 1)
+	\item[] t = time to option maturity (in years)
+	\item[] N = normal cumulative distribution function
+\end{itemize}
+# Stochastic
+## Measure
+P - real world measure
+Q - risk neutral measure
 
 
 
