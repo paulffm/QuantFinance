@@ -113,9 +113,15 @@ Options depending on strike, maturity, delta=how much option depends on underlyi
 
 # Hedging
 A reduction of risk for example by combining a number of Shares S and Puts $V_p$ in a portfolio
-## Value of an Option example
-$\Pi (t) = V_{C, 0} - \Delta \cdot S_0$
-
+## Value of an Option example for hedging:
+Writer sell option with value $V_{C, 0}$ and hedge this position with buying stock with value $S_0$: How to choose $\Delta$?
+$$\Pi (t) = V_{C, 0} - \Delta \cdot S_0$$ 
+Stock goes up: Buyer of option: buys 
+$$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} -max(S_{up} - K, 0} = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} - S_{up} + K $$ 
+Stock goes up: Buyer of option dont buy
+$$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{d}  $$
+$$\Delta =  \frac{S_{up} - K}{S_{up} - S_{d}}$$
+You can see here that the volatility $S_{up} - S_{d}$ drives the prices of the option. More volatility smaller $\Delta$
 
 
 
