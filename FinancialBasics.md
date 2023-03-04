@@ -93,7 +93,18 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 # Financial Basics
+# Stocks
+Ownershop of a small piece of a company. Price is determined by the value of the company and by the expectations = bid and ask behavior. 
+Volatility = stock price difference to expected value
+value in holding the stock comes from dividends and any growth in the stocks value
+Dividends: Cum = Buying af
+# Interest rate
+interest = money paid for a credit or liability = percentage of principal, amount owed to the lender
+interest rate = 
+
+
 # Options
+Tiny piece of financial world, but important for modelling aspects.
 An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a speciifed date.
 * In short:
   * Agreement to buy/sell at given price, to specified time
