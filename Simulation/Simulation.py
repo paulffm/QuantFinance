@@ -52,6 +52,7 @@ class SimulatorManager:
         return S_disc
 
 
+
     def plot_paths(self, Paths: dict):
         try:
             timeGrid = Paths["time"]
