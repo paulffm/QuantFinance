@@ -93,8 +93,118 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 # Financial Basics
+# Stocks
+Ownershop of a small piece of a company. Price is determined by the value of the company and by the expectations = bid and ask behavior. \\
+Volatility = stock price difference to expected value
+value in holding the stock comes from dividends and any growth in the stocks value
+Dividends: Cum = Buying af
+# Interest rate
+interest = money paid for a credit or liability = percentage of principal, amount owed to the lender \\
+interest rate = percentage that is paid over a certain time period. Banks may change the interest rate to either slow down or speed up economy growth \\
+Discret compounding: $M_0 * (1 + r)^n$
+Continous compounding: $M_0 * (1 + \frac{r}{m})^n$ \\
+PDE: $\frac{d M}{d t} = r M(t) => M(t) = M_0 \exp ^{rt}$
+# Definitions:
+* Volatility = Measure for variation of financial prices over time
+* Security = instrument representing ownership
+* Return = gain or loss of a security in a particular period
+* Commodities = raw products
+Options depending on strike, maturity, delta=how much option depends on underlying, implied volatility=sigma, uncertainty
+
+# Hedging
+A reduction of risk for example by combining a number of Shares S and Puts $V_p$ in a portfolio
+## Value of an Option example for hedging:
+Writer sell option with value $V_{C, 0}$ and hedge this position with buying stock with value $S_0$: How to choose $\Delta$?
+$$\Pi (t) = V_{C, 0} - \Delta \cdot S_0$$ 
+Stock goes up: Buyer of option: buys 
+$$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} -max(S_{up} - K, 0) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{up} - S_{up} + K $$ 
+Stock goes up: Buyer of option dont buy
+$$\Pi (t) = V_{C, 0} - \Delta \cdot S_0 + \Delta S_{d}  $$
+$$\Delta =  \frac{S_{up} - K}{S_{up} - S_{d}}$$
+You can see here that the volatility $S_{up} - S_{d}$ drives the prices of the option. More volatility smaller $\Delta$ and higher price for the option \\
+General principles:\\
+* The longer the time to expiry, the more time time there is for the asset to rise or fall\\
+* the more the asset is volatile the higher 
+## Put-Call Parity
+A relation between euro call and put options with same strike price K and expiry T:\\
+Portfolio A: Call option + $K \cdot e^-{rT}$ (discounted)\\
+Portfolio B: Put option + one unit of asset
+$$\Pi_A (t) = max(S_T - K, 0) + K = max(S_T, K)$$
+$$\Pi_B (t) = max(K - S_T, 0) + S_T = max(K, S_T)$$
+so: \\
+$$V_C + K \cdot e^-{r(T - t)} = V_p + S(t)$$
+## Arbitrage
+If difference between call-put Parity big enough
+# Modeling Asset prices
+SDE = stochastic differential equation
+interested in return: $return = \frac{S(t + \Delta - S(t)}{S(t)}$
+## Wiener Process
+* starts at $W_0 = 0$
+* stationary, independent increments (uncorrelated increments like Markov)
+* for every t > 0, W(t) has a normal distribution with mean=0 and variance t
+* it has continous paths with no jumps
+$dW(t) = W(t+\delta t) - W(t)$ ,var: $dW(t)= \sqrt{dt} \cdot Z$ with Z standardnv
+## Stochastic Processes
+A collection of RV $X(t)(\omega)$ $t = time$ and $\omega$ outcome from probabilistic space. (many trajectories: each for a $\omega$
+## Geometric Brownian Motion: GBM
+$dS(t) = \mu dS(t) + \sigma dS(t) dW(t)$
+Drift + Volatility. Drift is expectation of dS(t) and only over longer time scales it becomes important -> Volatility dominates \\
+Other types are: 
+* arithmetic BM: can be negative
+* GBM:
+* Ornstein Uhlenbeck: oscilating around mean with speed k
+## Itos Lemma
+Main ideas:\\
+given Process: Consider a function of this Process $Y(t) = g(t, X(t))$\\
+ito tells me the dynamics of process d: dY -> can solve many SDE by hand\\
+With itos table I can find the SDE of dY(t) and can solve it\\
+then by substituting mean and var in F(x) = P(X < x) of NV I can find the prob density function \\
+How to simulate:
+$dX(t) = \frac{X(t+ \delta t) - X(t)}{\delta t)}$ and then solve for $X(t+ \delta t)$ on time grid. Also write dW(t) in this manner: \\
+Z - mean / std because of better convergence 
+# Black Scholes Model
+\begin{itemize}
+	\item[] C = Call option price 
+	\item[] S = Current stock price
+	\item[] K = Strike price of the option
+	\item[] r = risk-free interest rate (a number between 0 and 1)
+	\item[] $\sigma$ = volatility of the stocks return (a number between 0 and 1)
+	\item[] t = time to option maturity (in years)
+	\item[] N = normal cumulative distribution function
+\end{itemize}
+$$\frac{\partial \mathrm C}{ \partial \mathrm t } + \frac{1}{2}\sigma^{2} \mathrm S^{2} \frac{\partial^{2} \mathrm C}{\partial \mathrm C^2}
+	+ \mathrm r \mathrm S \frac{\partial \mathrm C}{\partial \mathrm S}\ =
+	\mathrm r \mathrm C$$
+Assumption of stochastic process and bank account $M(t)= M_0 \cdot e^{rt}$
+Have one option of euro type and a shares S: We buy or sell options and in order to hedge we trade underlying stock: Dont want to lose or gain in the market -> have to continously rebalance portfolio $\Pi (t, S(t))$: \\
+$$\Pi (t, S(t)) = V(t, S(t) - \Delta \cdot S(t)$$ 
+Dynamics of portfolio: 
+$$d\Pi (t, S(t)) = dV(t, S(t) - \Delta \cdot dS(t)$$
+Then apply itos lemma to find SDE of dV:
+dS(t) ersetzt mit Standard Drift gleichung genauso dS(t)^2 mit dt^2=0
+Dont want uncertainty choose $\Delta(t)= $ -> cancel Brownian Motion: \\
+Value now fully deterministic, fully depend on underlying\\
+$d\Pi$ should grow with $r\Pi dt$: same yield as money bank account?
+
+
+
+
+# Stochastic
+## Measure
+P - real world measure: No arbitrage
+Q - risk neutral measure: Arbitrage conditions need to hold
+
+
+
+
+
+
+
+
+
 # Options
-An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a speciifed date.
+Tiny piece of financial world, but important for modelling aspects.
+An option is a contract which gives the buyer the right but not the obligation to buy or sell an underlying asset or instrument at a specified strike price prior to or on a specified date.
 * In short:
   * Agreement to buy/sell at given price, to specified time
   * a premium is paid for the flexibility
@@ -110,13 +220,17 @@ An option is a contract which gives the buyer the right but not the obligation t
 ### Call vs Put:
 The right to buy (Call)/ sell (Put) the underlying at a specified price at a specified time in the future
 * Example: underlying price at t (now) $p_t = 40 $$
-* Right to buy/sell the underlying at p_t+365 = 40 $ in 1 year
+* Right to buy/sell the underlying at $p_t+365 = 40$  in 1 year
 ##### Call: (Stock Price S, Strike Price K)
 * Call buy: The right to buy the underlying at a specified price K at a specified time in the future: Hoping Strike Price K is below the real future stock price S
-* Call sell: Seller must pay the difference between S - K: Hoping S falls over time
+* Call sell: Seller must pay the difference between S - K: Hoping S falls over time \\
+Value of european call option at expiry T, Stock price S, Strike price K:
+$ V_C(T, S_T) = max(S_T - K, 0)$
 ##### Put:
 * Put buy: The right to sell the underlying at a specified price K at a specified time in the future: Hoping Strike Price K is above the real future stock price S
 *  Put Sell: Seller must pay the difference between K - S: Hoping S rises over time
+Value of european put option at expiry T, Stock price S, Strike price K:
+$ V_P(T, S_T) = max(K - S_T, 0)$
 ### Underlying:
 An underlying is a security/commodity to be bought or sold under the terms of the contract
 * Shares, Futures, Anything
@@ -136,6 +250,7 @@ Key idea: Price at which a willing buyer and seller transact an options contract
 * Call (Put): Exercised Buyer: choose to buy (sell) @ Strike Price; Assigned Seller: assigned to sell (buy) @ Strike Price
 * European Contract: Can only be exercised at Expiration 
 * American Contract: Can be exercised anytime between now and expiration date
+* Bermudan Contract: Can be only exercised on specified dates
 ## Black Scholes PDE:
 ### Assumptions:
 * Short Term interest rates are constant: risk free zinssatz gleich für Kapialaufnahme und Kapitalanlaghe
