@@ -44,7 +44,7 @@ class SimulatorManager:
 
         # Discounted Stock paths
         S_disc = np.zeros([self.NoOfPaths, self.NoOfSteps + 1])
-        M = lambda t: np.exp(r * t)
+        M = lambda phi: np.exp(r * phi)
 
         for i, ti in enumerate(t):
             S_disc[:, i] = S[:, i] / M(ti)
